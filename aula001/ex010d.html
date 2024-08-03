@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desafio da aula 11</h1>
+    País de origem: <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick="verificar()">
+    <div id="resp">
+
+    </div>
+    <script>
+        function verificar(){
+            var paisv =document.querySelector('input#pais')
+            var resp =document.querySelector('div#resp')
+            var resposta = String(paisv.value)
+            resp.innerHTML = `<p>Seu pais de origem é: ${resposta}`
+            if (resposta == 'Brasil'){
+                resp.innerHTML +=`<p>você é brasileiro</p>`
+                
+            }else{
+                resp.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
