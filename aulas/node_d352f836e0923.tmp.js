@@ -7,5 +7,5 @@ while (c <= 1 ){
 do{
     console.log(`Passo ${d}`)
     d++
-}while(d <=10)
+}while(c <=10)
     
