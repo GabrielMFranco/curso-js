@@ -49,29 +49,7 @@
     <footer>
         <a href="https://github.com/GabrielMFranco">@GabrielMFranco</a>
     </footer>
-
-    <script>
-        function carregar(){
-            var infohora=document.querySelector('div#infohora')
-            var foto=document.querySelector('div#imagem')
-            var agora = new Date() 
-            //var hora = agora.getHours()
-            //var minut= agora.getMinutes()
-            var hora = 9
-            
-            infohora.innerHTML= `Agora são ${hora} horas`
-            if(hora >= 0 && hora < 12){
-                //bom dia
-                img.src= "imagens/manha.png"
-                document.body.syle.background = 'yellow'
-            }else if(hora >=12 && hora < 18){
-                //boa tarde
-                img.src= "imagens/tarde.png"
-            }else{
-                //boa noite
-                img.src= "imagens/noite.png"
-            }
-        }  
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
