@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo exercicio</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(58, 57, 57);
+            font: normal 1em Arial;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+
+        }
+        section{
+            margin: auto;
+            width: 450px;
+            padding: 15px;
+            background-color: whitesmoke;
+            color: black;
+            border-radius: 20px;
+        
+        }
+        footer{
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+            font-style: italic;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    <section>
+        <div id="infohora">
+            AQUI MSG
+        </div>
+        <div id='imagem'>
+            <img id="foto" src="imagens/manha.png" alt="foto manha">
+        </div>
+            
+    </section>  
+    <footer>
+        <a href="https://github.com/GabrielMFranco">@GabrielMFranco</a>
+    </footer>
+
+    <script>
+        function carregar(){
+            var infohora=document.querySelector('div#infohora')
+            var foto=document.querySelector('div#imagem')
+            var agora = new Date() 
+            //var hora = agora.getHours()
+            //var minut= agora.getMinutes()
+            var hora = 9
+            
+            infohora.innerHTML= `Agora são ${hora} horas`
+            if(hora >= 0 && hora < 12){
+                //bom dia
+                img.src= "imagens/manha.png"
+                document.body.syle.background = 'yellow'
+            }else if(hora >=12 && hora < 18){
+                //boa tarde
+                img.src= "imagens/tarde.png"
+            }else{
+                //boa noite
+                img.src= "imagens/noite.png"
+            }
+        }  
+    </script>
+</body>
+</html>
