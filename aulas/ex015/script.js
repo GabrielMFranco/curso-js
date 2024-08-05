@@ -9,7 +9,7 @@ function verificar(){
         var sexof = document.getElementsByName('sexo')
         var idade = ano - Number(fano.value)
         var gênero = ''
-        var img= document.createElement('img')
+        var img = document.createElement('img')
         img.setAttribute('id', 'foto')
         if (sexof[0].checked){
             gênero="Homem"
@@ -40,7 +40,7 @@ function verificar(){
         }
         res.style.textAlign='center'
         resultado.innerHTML = `Detectamos um ${gênero} com ${idade} anos.`
-        res.appendChild('img')
+        resultado.appendChild(img)
     }
     
 }  
