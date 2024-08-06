@@ -11,13 +11,21 @@ function contagem(){
         let inum = Number(i.value)
         let fnum = Number(f.value)
         let pnum = Number(p.value)
-        if(inum >= fnum){
-            window.alert('ERRO, o número de inicio deve ser menor que o número do final.')
-        }else{
-            for(let c = inum; c <=fnum; c+=pnum){
-                contagem.innerHTML += ` ${c}🧠 ;`
-            }
-            contagem.innerHTML +=' Fim \u{1F3C1} '
+        if(pnum <= 0){
+            window.alert('passo invalido, considerando passo = 1')
+            pnum=1
         }
+        if(inum > fnum){
+            //contagem regressiva
+            for(let c = inum; c >= fnum; c -= pnum){
+                contagem.innerHTML += ` ${c}🧠 `
+            }
+        }else{
+            //contagem crescente
+            for(let c = inum; c <=fnum; c+=pnum){
+                contagem.innerHTML += ` ${c}\u{1F449} ;`
+            }
+            
+        }contagem.innerHTML +=' Fim \u{1F3C1} '
     }
 }
