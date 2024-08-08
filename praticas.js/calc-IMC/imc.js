@@ -6,10 +6,8 @@ function calcular(){
     if(alt.value <=10 && pes.value<=10){
         alert('Verifique os dados e tente novamente.')
     }else{
-        var imc = pes.value / (alt.value*2)
-        res.innerHTML += `Seu IMC é ${imc}`
-        //max.length 
-        //info imc
+        var imc = pes.value / (alt.value*alt.value)
+        res.innerHTML += `Seu IMC é ${imc.toFixed(2)}.`
     }
     
 }
