@@ -6,7 +6,7 @@ function gerar(){
     var max = 100
     var dif = max - min
     var randomic = Math.random()
-    comp= min + Math.trunc(dif * randomic)
+    var comp= min + Math.trunc(dif * randomic)
 }
 function jogo(){
     player = Number(window.prompt('Qual é seu palpite?'))
