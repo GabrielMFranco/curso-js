@@ -1,8 +1,13 @@
 {
-    "name": "name",
-    "description": "description",
-    "authors": "author",
+    "name": "01-fundamentos-nodejs",
+    "type": "module",
     "version": "1.0.0",
-    "main": "pathToMain",
-    "dependencies": {}
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev":"node --watch src/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license":"ISC"
 }
